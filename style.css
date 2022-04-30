@@ -84,6 +84,12 @@ html {
     font-weight: bold;
 }
 
+.login__value {
+    color: var(--very-light-pink);
+    font-size: 1.4rem;
+    margin: 8px 0 30px 0;
+}
+
 .login__form .input {
     background-color: var(--text-input-field);
     border: none;
@@ -125,7 +131,7 @@ html {
     font-family: inherit;
 }
 
-.secundary-button {
+.secondary-button {
     background-color: var(--white);
     border-radius: 4px;
     border:2px solid var(--hospital-green);
