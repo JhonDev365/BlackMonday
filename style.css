@@ -149,8 +149,63 @@ html {
     margin-top: 15px;
 }
 
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    place-content: center;
+}
+
+.product-card {
+    width: 240px;
+}
+
+.product-card img {
+    width: 240px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.product-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2){
+    font-size: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--very-light-pink);
+}
+
 @media (max-width: 768px){
     .login__logo{
         display: block;
     }
+    .product-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-card {
+        width: 140px;
+    }
+    .product-card img {
+        width: 140px;
+        height: 100px;
+    }
+    
+
 }
